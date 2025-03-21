@@ -25,10 +25,84 @@
       color: gold;
       text-shadow: 2px 2px black;
     }
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      border-collapse: collapse
+    }
+    caption {
+      font-size: 75%
+    }
+    caption, p {
+      background-color: rgba(255, 255, 255, .7);
+    }
+    thead {
+      background-color: lightgreen;
+      border: 1px solid black;
+    }
+    tbody {
+      background-color: white;
+    }
+    td, th {
+      padding: 3px 10px;        
+    }
+    tfoot {
+      background-color: lightblue;
+      border: 1px solid black;
+    }
   </style>
 </head>
 <body>
   <h1>Gerenciador de Tesouros</h1>
+  
+  <table>
+    <caption>Estes são os tesouros acomulados do Barba-Ruiva em suas aventuras</caption>
+    <thead>
+      <tr>
+        <th>Tesouro</th>
+        <th>Nome</th>
+        <th>Valor unitário</th>
+        <th>Quantidade</th>
+        <th>Valor total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="imgs/moedas.png" alt=""></td>
+        <td>Moedas de ouro</td>
+        <td>10</td>
+        <td>835</td>
+        <td>8350</td>
+      </tr>
+      <tr>
+        <td><img src="imgs/coroa.png" alt=""></td>
+        <td>Coroas</td>
+        <td>210</td>
+        <td>4</td>
+        <td>840</td>
+      </tr>
+      <tr>
+        <td><img src="imgs/calice.png" alt=""></td>
+        <td>Cálices de ouro</td>
+        <td>4.500</td>
+        <td>1</td>
+        <td>4.500</td>
+      </tr>
+      <tr>
+        <td><img src="imgs/rum.png" alt=""></td>
+        <td>Barris de rum</td>
+        <td>não tem preço</td>
+        <td>7</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Total</td>
+        <td>13690</td>
+      </tr>
+    </tfoot>
+  </table>
   <p>Yarr Harr, marujo! Aqui é o temido Barba-Ruiva e você deve me ajudar a contabilizar os espólios das minhas aventuras!</p>
 </body>
 </html>
